@@ -1,0 +1,468 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        border:none;
+        background-color:#fff;
+        text-align:right;
+        height:contain;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    
+    .container ul{
+        float:right;
+    }
+    ul{
+        font-family: 'Muli', sans-serif;
+        font-style: italic;
+        font-variant: small-caps;
+        color:#000;
+        padding:2.5%;
+    }
+    
+    li:hover{
+        background:#eee;
+
+    }
+    
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+.logo{
+    width:30vh;
+    float:left;
+}
+
+.intro-section {
+    height: 100vh;
+    padding-top: 15vh;
+    text-align:;
+    background: #fff;
+    border:none;
+}
+
+#landingimage{
+    width:70vw;
+    height:90vh;
+    background-image: url(images/face.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#landingimage:hover{
+    width:70vw;
+    height:90vh;
+    background-image: url(images/facehover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-section {
+    height: 100vh;
+    margin-top:20vh;
+    padding-top: 30vh;
+    text-align:;
+    background: #fff;
+    border:none;
+}
+        .me{
+            width:40vw;
+            float:left;
+            display:inline-block;
+            vertical-align:middle;            
+        }
+
+
+        #bio{
+            float:left;
+            position:relative;
+            padding-left:2vw;
+            padding-right:2vw;
+            display:inline-block;
+            text-align:left;
+            width:30vw;
+            margin-top:3vh;
+        }
+
+            p{
+                font-family: 'Muli', sans-serif;
+                font-style: italic;
+                font-size:.9em;
+                letter-spacing:.05em;
+                line-height:170%;
+                color:#a9a9a9;
+            }
+            
+p a:link{
+    text-decoration: underline;
+    color:#a9a9a9;
+}
+
+p a:visited{
+    text-decoration: underline;
+    color:#ccc;
+}
+
+p a:hover{
+    text-decoration: underline;
+    color:#a9a9a9;
+}
+
+p a:active{
+    text-decoration: underline;
+    color:#000;
+}
+
+                .hihello{
+                    width:15vw;
+                    margin-bottom:5vh;
+                }
+#projects{
+    width:80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-section {
+    height: 150vh;
+    padding-top: 30vh;
+    margin-top:20vh;
+    background: #fff;
+}
+
+.designlink{
+    width:45vw;
+    position:absolute;
+    z-index:50;
+    display:inline-block;
+    left:0vw;
+    float:left;
+}
+
+.designlink:hover{
+    opacity:.5;
+}
+
+.aboutface{
+    width:25vw;
+    position:absolute;
+    z-index:1;
+    display:inline-block;
+    margin-left:0 auto;
+    margin-right:0 auto;
+    top:25vh;
+    left:25vw;
+    float:left;
+    
+}
+
+.photographylink{
+    float:left;
+    top:35vh;
+    left:30vw;
+    width:45vw;
+    position:absolute;
+    display:inline-block;
+    z-index:50;
+}
+
+.photographylink:hover{
+    opacity:.5;
+}
+
+/********************************************** RESUME*****************************************************/
+
+#resume{
+    width:50vw;
+    margin-left:15vw;
+    margin-right:auto;
+    margin-top:15vh;
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    font-size:14px;
+}
+
+#resume h2{
+        letter-spacing:4px;
+    font-size:19px;
+}
+
+#resume h3{
+        letter-spacing:1px;
+        margin-bottom:none;
+        font-size:14px;
+        font-variant:small-caps;
+}
+
+#resume p{
+        letter-spacing:1px;
+    line-height:140%;
+    font-size:12px;
+}
+
+/********************************************** CONTACT *****************************************************/
+.contact-section {
+    height: 100vh;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.letshangout{
+    width:40vw;
+    margin-bottom:5vh;
+}
+/********************************************** FORM*****************************************************/
+    
+body {
+  font-family: 'Eczar', serif;
+letter-spacing: 4px;
+  color: #A9A9A9;
+}
+
+
+#form {
+  position: relative;
+  width: 500px;
+margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    margin-bottom: 20vh;
+}
+
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #A9A9A9;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #A9A9A9;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #A9A9A9;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #A9A9A9;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #A9A9A9;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #A9A9A9;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #A9A9A9;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #A9A9A9;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #fff;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #fff;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #fff;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #fff;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #fff;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #A9A9A9;
+}
+
+input {
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #ccc;
+  
+  border: solid 1px #ccc;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #ccc;
+  color: #fff;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #ccc;
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+  font-size: 0.875em;
+  
+  border: solid 1px #ccc;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #ccc;
+  color: #fff;
+}
+
+#submit {
+  padding: 0;
+  margin: -10px 0px 0px 0px;
+  font-family: 'Muli', sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+  font-size: 0.875em;
+  color: #ccc;
+  outline:none;
+  cursor: pointer;
+  border: solid 1px #ccc;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #fff;
+}
+/*END CONTACT FORM*/ 
+
+
+/*******************************************DESIGN PAGE***********************************************/
+
+
+.design-section {
+    height: 70vh;
+    padding-top: 15vh;
+    text-align:;
+    background: #fff;
+    border:none;
+}
+
+.designheader{
+    width:15vw;
+    top:25vh;
+    transform:translateX(-20%);
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position:absolute; 
+
+}
+
+#designthumbs{
+    height:60vh;
+}
+
+.designthumb:hover{
+    opacity:.5;
+}
+
+/*******************************************PHOTOGRAPHY PAGE***********************************************/
+
+
+#thumbs img{
+    width:20vw;
+}
+
+/*******************************************ILLUMICOFFEE PAGE***********************************************/
+
+#sideimages{
+    margin-top:30vh;
+    width:45vw;
+    float:left;
+}
+.sideimage{
+    width:40vw;
+    margin-bottom:5vh;
+}
+
+#description{
+    margin-top:30vh;
+     font-family: 'Muli', sans-serif;
+    font-style: italic;
+    letter-spacing:1px;
+    float:left;
+    width:25vw;
+}
+
+.collaboration{
+    font-variant: small-caps;
+}

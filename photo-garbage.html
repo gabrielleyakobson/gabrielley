@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>design by gabrielle</title>
+    
+        <link type="text/css" href="css/styles.css" rel="stylesheet" media="all" />
+    
+<link href="https://fonts.googleapis.com/css?family=Muli:400,400i" rel="stylesheet">
+    
+
+    
+    <!-- Skeleton CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="scrolling-nav.css" rel="stylesheet">
+    
+    <!--CHOCOLAT-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+
+
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-------------------------------------- navigation -------- ------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img class="logo" src="images/logo.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#about">about</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#projects">projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+        <!-------------------------------------- header Section ------------------------------------------->
+    <section id="design" class="design-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="designheader" src="images/photography/photographyheader.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-------------------------------------- thumbnail Section ------------------------------------------->
+      <section id="designthumbs" class="designthumbs-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+    <div class="row">
+        <ul>
+           <!-- For filtering controls add -->
+            <li class="active" data-filter="all">All</li>
+            <li data-filter="1"> Collage </li>
+            <li data-filter="2"> Photo </li>
+        </ul>                    
+    </div>                  
+                   <!---------grid container-------------->                                        
+<div class="container filtr-container">
+
+  <!-- columns should be the immediate child of a .row -->
+
+  <!-- just use a number and class 'column' or 'columns' -->
+
+      
+<!--      <div id="thumbs">-->
+          <div class="chocolat-parent" data-chocolat-title="set title">
+          
+            <a class="chocolat-image filtr-item" href="images/photography/photos/deadsea1.jpg" title="Dead Sea" data-category="1">
+            <img src="images/photography/thumbs/deadsea1.jpg">
+            </a><!--DEAD SEA PIC-->
+          
+          
+            <a class="chocolat-image filtr-item" href="images/photography/photos/photo1.jpg" title="Untitled" data-category="2">
+            <img src="images/photography/thumbs/photo1.jpg">
+            </a><!--PHOTO 1-->
+          
+          
+            <a class="chocolat-image filtr-item" data-category="2" href="images/photography/photos/menarewatching.png" title="The men are watching">
+            <img src="images/photography/thumbs/menarewatching.jpg">
+            </a>
+            </div><!--MEN ARE WATCHING-->
+
+
+    
+</div>  <!--end container-->
+                </div>
+            </div>
+          </div>
+    </section>
+
+                    
+    
+        <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    
+    <!--CHOCOLAT-->
+    <script type="text/javascript" src="js/jquery.chocolat.js"></script>
+    <script type= "text/javascript">
+        $(document).ready(function(){
+            $('.chocolat-parent').Chocolat({
+                    imageSize: 'contain'
+                });
+        });
+    </script>
+    
+    <!--    FILTERIZR-->
+     <script src="node_modules/filterizr/src/jquery.filterizr.js"></script>
+    <script>
+        var options = {
+       animationDuration: 0.5, //in seconds
+       filter: 'all', //Initial filter
+       callbacks: { 
+          onFilteringStart: function() { },
+          onFilteringEnd: function() { },
+          onShufflingStart: function() { },
+          onShufflingEnd: function() { },
+          onSortingStart: function() { },
+          onSortingEnd: function() { }
+       },
+       delay: 0, //Transition delay in ms
+       delayMode: 'progressive', //'progressive' or 'alternate'
+       easing: 'ease-out',
+       filterOutCss: { //Filtering out animation
+          opacity: 0,
+          transform: 'scale(0.5)'
+       },
+       filterInCss: { //Filtering in animation
+      opacity: 1,
+      transform: 'scale(1)'
+       },
+       layout: 'sameSize', //See layouts
+       selector: '.filtr-container',
+   setupControls: true 
+    } 
+//You can override any of these options and then call...
+var filterizd = $('.filtr-container').filterizr(options);
+//If you have already instantiated your Filterizr then call...
+filterizd.filterizr('setOptions', options);
+    </script>
+
+
+</body>
+
+</html>
